@@ -2,15 +2,15 @@
 <head>
     <meta charset="utf-8">
     <title>Ajax demo 1</title>
+    <author>Chariesa Roozendaal</author>
     <script>
-        //===============================================
-        function showList(str, typeSearch) { // eerste dropdownlist
+        function showList(str, typeSearch) {
             console.log(typeSearch);
             if (str == "") {
                 document.getElementById("txtHint").innerHTML = "";
                 return;
             } else {
-                if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                if (window.XMLHttpRequest) {
                     xmlhttp = new XMLHttpRequest();
                 } else {// code for IE6, IE5
                     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
@@ -43,13 +43,14 @@
         }
         //===============================================
     </script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:gray">
-<p><img src = "http://ma-web.nl/static/vector/Logo_blok.svg" width = "30"> Ajax demo 3</p>
+<body>
+<p><img src = "http://ma-web.nl/static/vector/Logo_blok.svg" width = "60"> Ajax demo 3</p>
 <form>
-    <input type = "text" name="search" onKeyUp="showList(this.value, 'list')" placeholder="zoek een land">
+    <input type = "text" name="search" onKeyUp="showList(this.value, 'list')" placeholder="Zoek een land">
 </form>
-<div id = "txtHint">hier komt de lijst</div>
+<div id = "txtHint">Hier verschijnt de lijst</div>
 </body>
 </html>
 

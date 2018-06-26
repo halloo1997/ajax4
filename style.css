@@ -1,0 +1,10 @@
+body{
+    background: aquamarine;
+    font-family: Avenir;
+}
+
+#txtHint span{
+    font-size: 20px;
+    font-family: Gobold Blocky;
+    font-style: italic;
+}
